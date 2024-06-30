@@ -1,4 +1,3 @@
-alert("Darling Shruthimaaaa I love youuu soo much ,I miss youuuu here is the surprise");
 document.addEventListener("DOMContentLoaded", function() {
     // Create a <style> element
     const style = document.createElement('style');
