@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+
+/* margin top */
+.margin{
+    width:100%;
+    height: 7vh;
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(255, 132, 212, 0.984) 56%, rgba(255,67,190,1) 88%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.marginicons{
+    display: flex;
+    width:25%;
+    align-items: center;
+    gap:17px;
+    height: 100%;
+}
+.marginicons a{
+    text-decoration: none;
+}
+.marginicons a img{
+    width : 4vh;
+    height: 4vh;
+}
+.telemail{
+    width:35%;
+    white-space: nowrap;
+}
+.telemail p{
+    font-size:1rem;
+    letter-spacing: 1px;
+}
+.consultbutton{
+    width:15%;
+}
+.consultbutton button{
+    padding: 0.5rem;
+    background: transparent;
+    border:3px solid white;
+    border-radius:50px;
+    font-size: 1rem;
+    color:white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* nav bar */
+
+nav{
+    width:100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.icon{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    position: relative;
+}
+.icon h1{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+   
+}
+.icon svg{
+    
+    position: absolute;
+    left:-2rem;
+    width: 7vw;
+    height: 7vh;
+}
+.navops{
+    width:60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.navops ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.navops ul li{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navops ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    font-size: 1.4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-inline:0.5rem;
+}
+.navops ul li a:hover{
+    background-color: grey;
+}
+.searchicon{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-inline:0.5rem;
+}
+.searchicon svg{
+    width :4vh;
+    height: 4vh;
+}
+.searchicon:hover{
+    background-color: gray;
+}
+.hero {
+    position: relative;
+    background: url("meeting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    z-index: 1;
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    opacity: 0.5; /* Adjust opacity here */
+    z-index: -1;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    flex-grow: 1;
+}
+.hero-ani1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+}
+.hero-ani1 h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 1;
+}
+.hero-ani1 h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    color: white;
+    opacity: 1;
+}
+.hero-ani1 p{
+    font-size:1.1rem;
+    letter-spacing: 1px;
+    color: white;
+}
+.buttoncontainer{
+    display: flex;
+    gap:20px;
+}
+.readbutton{
+    max-width:20%;
+    white-space: nowrap;
+    padding: 0.8rem;
+    background: rgb(251,191,100);
+    background:linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 0%,rgba(255,67,190,1) 88%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    border-radius:50px;
+    font-size: 1rem;
+    color:white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+.requestbutton{
+    letter-spacing: 1px;
+    white-space: nowrap;
+    max-width:25%;
+    padding: 0.8rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid white;
+    border-radius:50px;
+    font-size: 1rem;
+    color:white;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 1;
+}
+@keyframes slide-up {
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+        
+    }
+    
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes fade-out{
+    81%,100%{
+        opacity: 1;
+    }
+    80%,61%{
+        opacity: 0.7;
+    }
+    0%,60%{
+        opacity: 1;
+    }
+    
+}
+@keyframes slide-left{
+    0%{
+        transform: translateX(30%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes dotb {
+    0%,95%{
+        background: rgb(251,191,100);
+        background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 0%, rgba(255,67,190,1) 88%);
+    }
+    96%,100% {
+        border: 3px solid white;
+        background: transparent;
+    }
+}
+.dots{
+    width:5%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dot1{
+    width:20px;
+    height:20px;
+    border: 3px solid white;
+    animation: dotb 4s ease-in;
+    border-radius: 50%;
+}
+.dot2{
+    width:20px;
+    height:20px;
+    border: 3px solid white;
+    animation: dotb 4s ease-in;
+    border-radius: 50%;
+}
+.dot3{
+    width:20px;
+    height:20px;
+    border: 3px solid white;
+    animation: dotb 4s ease-in;
+    border-radius: 50%;
+}
+.dot1{
+    animation-delay: 0s;
+}
+.dot2{
+    animation-delay: 4s;
+}
+.dot3{
+    animation-delay: 8s;
+}
+.hide{
+    display: none;
+}
+.launch{
+    height: 25vh;
+    width:100%;
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(197, 97, 162, 0.984) 56%, rgba(255,67,190,1) 88%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.lauchpad{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.launchbox{
+    height: 70%;
+    width:30%;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.imagedesc img{
+    border: 5px solid white;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    padding: 5px;
+}
+.imagedesc h3{
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: white;
+    word-spacing:5px;
+}
+.imagedesc{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.para{
+    word-spacing:2px;
+    color:white;
+    font-weight: bold;
+}
+.Aboutus{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top:3rem;
+}
+.aboutcontainer{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+.aboutdesc{
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    font-family: "PT Sans", sans-serif;
+    width:60%;
+    height: 100%;
+}
+.aboutdesc h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.aboutdesc .h1{
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(197, 97, 162, 0.984) 56%, rgba(255,67,190,1) 88%);
+    height: 3px;
+    border-radius: 10px;
+}
+.aboutdesc h4{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.aboutdesc p{
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    color:rgb(101, 99, 99);
+    line-height: 1.7rem;
+}
+
+.rec-image{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.rec-box{
+    height: 35%;
+    z-index: -1;
+    width: 100%;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(197, 97, 162, 0.984) 56%, rgba(255,67,190,1) 88%);
+}
+.rec-white{
+    background-color: white;
+    border-radius: 10px;
+    height: 90%;
+    width: 95%;
+}
+.rec-image img{
+    position: absolute;
+    bottom:8px;
+    z-index: 1;
+    height: 80%;
+}
+
+
+.ourservices{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 4rem;
+}
+.oscontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap:1.3rem;
+}
+.osdesc{
+    font-family: "PT Sans", sans-serif;
+    width:60%;
+    height: 20%;
+}
+.osdesc h3{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+.osdesc .hr{
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(197, 97, 162, 0.984) 56%, rgba(255,67,190,1) 88%);
+    height: 3px;
+    border-radius: 10px;
+}
+.osboxes{
+    width:100%;
+    height:70%;
+    display: flex;
+    justify-content: space-between;
+}
+.osbox{
+    width:30%;
+    height: 90%;
+}
+.o1{
+    background: url("project1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.o2{
+    background: url("project2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.o3{
+    background: url("project3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.osbutton{
+    position: absolute;
+    background-color: white;
+    height: 3.5rem;
+    width:80%;
+    right:0px;
+    bottom:0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: "PT Sans", sans-serif;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.osbutcont{
+    background: rgb(251,191,100);
+    background: linear-gradient(35deg, rgba(251,191,100,0.9864320728291317) 10%, rgba(197, 97, 162, 0.984) 56%, rgba(255,67,190,1) 88%);
+    border-radius: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.osbutcont img{
+    width:6vh;
+    height: 6vh;
+    padding:5px;
+}
+.osbutton p{
+    margin-right: 1rem;
+}
